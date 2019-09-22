@@ -1,5 +1,5 @@
 <?php
-include_once '/../'.'/RouteManager/RouteManager.php';
+include_once __DIR__.'/../RouteManager/RouteManager.php';
 
 class RequestManager
 {
