@@ -8,11 +8,30 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Network Technologies</title>
 </head>
 <body>
-<p>Hello, world!</p>
+<p>Successful deployment!</p>
+<?php
+include_once 'RequestManager/RequestManager.php';
+$domains = RequestManager::GetAllDomains();
+print_r($domains);
 
+
+/*print_r(RequestManager::GetAllDomains());
+// инициализация
+$ch = curl_init(Routes::$allDomainsRoute);
+// устанавливаем параметры
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+// получаем результат
+$domains = curl_exec($ch);
+// закрываем соединение
+curl_close($ch);*/
+
+// print_r($domains);
+
+?>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
