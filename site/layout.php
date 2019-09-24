@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="../bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../styles/layout.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/layout.css" rel="stylesheet" type="text/css">
     <title>Network Technologies</title>
 </head>
 <body class="body">
