@@ -1,0 +1,26 @@
+.navbar{
+    background:#F97300;
+    height: 60px;
+}
+.navbar-brand{
+    color: #ffffff !important;
+}
+.nav-button{
+    margin-right: 1em !important;
+    color: #ffffff !important;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.container {
+    display: flex;
+    height: 100%;
+    margin-top: 60px;
+    align-items: center;
+}
+.body {
+    background-image: url('img/background.png');
+}
