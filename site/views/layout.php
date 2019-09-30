@@ -19,17 +19,17 @@
         ini_set('display_errors', 1);
 
         include_once __DIR__.'/../'.'Managers/RequestManager/RequestManager.php';
-        include_once __DIR__.'/../'.'Managers/RequestManager/RequestManager.php';
+        include_once __DIR__.'/../'.'Helpers/SiteHelper.php';
 
-        SiteHelper::GetDomainId();
+        $domainId = SiteHelper::GetDomainId("cm93089_group5");
         //$domains = RequestManager::GetAllDomains();
         //print_r($domains);
 
-        $posts = RequestManager::GetAllPost(2);
+        $posts = RequestManager::GetAllPost($domainId);
         print_r($posts);
 
-        //$post = RequestManager::CreatePost(2);
-        //print_r($post);
+        $post = RequestManager::CreatePost($domainId);
+        print_r($post);
         ?>
     </div>
 </div>
