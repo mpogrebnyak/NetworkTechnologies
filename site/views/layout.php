@@ -25,11 +25,13 @@
         //$domains = RequestManager::GetAllDomains();
         //print_r($domains);
 
+        RequestManager::DeletePost($domainId,4);
         $posts = RequestManager::GetAllPost($domainId);
         print_r($posts);
 
-        $post = RequestManager::CreatePost($domainId);
-        print_r($post);
+
+        //$post = RequestManager::CreatePost($domainId);
+        //print_r($post);
         ?>
     </div>
 </div>

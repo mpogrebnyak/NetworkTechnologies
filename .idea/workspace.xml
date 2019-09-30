@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffd35ff6-6668-46ae-a441-362d46066f61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/NetworkTechnologies.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Managers/RequestManager/RequestManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Managers/RouteManager/RouteManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Managers/RouteManager/RoutesList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/IncludeContentOnPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/Helpers/SiteHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/Helpers/SiteHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/Managers/RequestManager/RequestManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/Managers/RequestManager/RequestManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/Managers/RouteManager/RouteManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/Managers/RouteManager/RouteManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/Managers/RouteManager/RoutesList.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/Managers/RouteManager/RoutesList.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/img/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +89,7 @@
           <entry key="css" value="124" />
           <entry key="html" value="333" />
           <entry key="js" value="87" />
-          <entry key="php" value="1355" />
+          <entry key="php" value="1586" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -110,7 +97,7 @@
           <entry key="CSS" value="124" />
           <entry key="HTML" value="333" />
           <entry key="JavaScript" value="87" />
-          <entry key="PHP" value="1355" />
+          <entry key="PHP" value="1586" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -147,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/views/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            <state relative-caret-position="459">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -168,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Managers/RouteManager/RouteManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state relative-caret-position="357">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -177,17 +164,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Managers/RouteManager/RoutesList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
+            <state relative-caret-position="85">
+              <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/Managers/RequestManager/RequestManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="51" selection-end-column="5" />
+            <state relative-caret-position="434">
+              <caret line="57" column="37" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -232,11 +219,11 @@
         <option value="$PROJECT_DIR$/site/Scripts/IncludeContentOnPage.js" />
         <option value="$PROJECT_DIR$/site/Views/layout.php" />
         <option value="$PROJECT_DIR$/site/Managers/RouteManager/RouteHelper.php" />
+        <option value="$PROJECT_DIR$/site/index.html" />
+        <option value="$PROJECT_DIR$/site/Helpers/SiteHelper.php" />
         <option value="$PROJECT_DIR$/site/Managers/RouteManager/RoutesList.php" />
         <option value="$PROJECT_DIR$/site/Managers/RouteManager/RouteManager.php" />
         <option value="$PROJECT_DIR$/site/Managers/RequestManager/RequestManager.php" />
-        <option value="$PROJECT_DIR$/site/index.html" />
-        <option value="$PROJECT_DIR$/site/Helpers/SiteHelper.php" />
         <option value="$PROJECT_DIR$/site/views/layout.php" />
       </list>
     </option>
@@ -247,7 +234,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -355,15 +342,15 @@
       <workItem from="1569169183184" duration="4121000" />
       <workItem from="1569174207551" duration="17380000" />
       <workItem from="1569859980168" duration="2841000" />
-      <workItem from="1569863276700" duration="3669000" />
+      <workItem from="1569863276700" duration="7171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42745000" />
+    <option name="totallyTimeSpent" value="46247000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15637584" />
@@ -419,13 +406,6 @@
     <entry file="file://$PROJECT_DIR$/site/Scripts/IncludeContentOnPage.js" />
     <entry file="file://$PROJECT_DIR$/site/styles/layout.css" />
     <entry file="file://$PROJECT_DIR$/site/Managers/RouteManager/RouteHelper.php" />
-    <entry file="file://$PROJECT_DIR$/site/Helpers/SiteHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -433,31 +413,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/layout.php">
+    <entry file="file://$PROJECT_DIR$/site/Managers/RouteManager/RouteManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        <state relative-caret-position="357">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/Managers/RouteManager/RouteManager.php">
+    <entry file="file://$PROJECT_DIR$/site/Helpers/SiteHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="187">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Managers/RouteManager/RoutesList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
+        <state relative-caret-position="85">
+          <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/Managers/RequestManager/RequestManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="434">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/views/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
         </state>
       </provider>
     </entry>

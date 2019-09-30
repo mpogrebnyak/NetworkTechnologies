@@ -17,6 +17,11 @@ class RouteManager {
         return self::CreateRoute($route, $domainId);
     }
 
+    public static function DeletePostOnDomainRoute($domainId, $postId) {
+        $route = RoutesList::$deletePostOnDomainRoute;
+        return self::CreateRoute($route, $domainId, $postId);
+    }
+
     private static function CreateRoute($route, $id = null, $postId = null) {
         return str_replace(['{id}', '{postId}'], [$id, $postId], $route);
     }
