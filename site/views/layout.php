@@ -5,7 +5,7 @@
             <ul class="navbar-nav mr-4">
 
                 <li class="nav-item">
-                    <a class="nav-button" href="#">Add Post</a>
+                    <a class="nav-button" href="#createPostModal">Add Post</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-button" href="#">Delete Post</a>
@@ -25,13 +25,42 @@
         //$domains = RequestManager::GetAllDomains();
         //print_r($domains);
 
-        RequestManager::DeletePost($domainId,4);
+        //RequestManager::DeletePost($domainId,17);
         $posts = RequestManager::GetAllPost($domainId);
         print_r($posts);
 
 
         //$post = RequestManager::CreatePost($domainId);
         //print_r($post);
+        ?>
+
+        <?php
+        echo '<form name="insert" action="views/addPost.php" method="post">
+					<a href="#x" class="overlay" id="createPostModal"></a>
+					<div class="popup">
+					  <h2>Add post</h2>
+					<a class="close"title="Close" href="#close"></a>
+					
+					<label for="title" class="sr-only">Title</label>
+					<input type="text" id="title" name="title" placeholder="Title" class="form-control" required autofocus>
+					
+					<label for="content" class="sr-only">Content</label>
+					<input type="text" id="content" name="content" placeholder="Content" class="form-control" required autofocus>
+					
+					<label for="author" class="sr-only">Author</label>
+					<input type="text" id="author" name="author" placeholder="Author" class="form-control">
+					
+					<label for="excerpt" class="sr-only">Excerpt</label>
+					<input type="text" id="excerpt" name="excerpt" placeholder="Excerpt" class="form-control" required autofocus>
+										
+					<label for="url" class="sr-only">Url</label>
+					<input disabled="disabled" type="text" id="url" name="url" placeholder="Url" class="form-control disabled" required autofocus>
+					
+					<label for="thumbnailUrl" class="sr-only">ThumbnailUrl</label>
+					<input disabled="disabled" type="thumbnailUrl" id="thumbnailUrl" name="thumbnailUrl" placeholder="ThumbnailUrl" class="form-control disabled" required autofocus>
+					
+					<button class="btn btn-primary btn-custom" href="views/addPost.php" name="submit" type="submit">Add</button>
+					</div></form>';
         ?>
     </div>
 </div>

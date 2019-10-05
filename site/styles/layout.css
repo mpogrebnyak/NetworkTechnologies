@@ -24,3 +24,8 @@
 .body {
     background-image: url('img/background.png');
 }
+
+.title {
+    margin-top: 5px !important;
+    background: #ec971f !important;
+}
