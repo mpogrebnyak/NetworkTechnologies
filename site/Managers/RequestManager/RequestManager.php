@@ -28,6 +28,16 @@ class RequestManager
         return $posts;
     }
 
+    public static function GetPost($domainId, $postId) {
+        $route = RouteManager::GetPostOnDomainRoute($domainId, $postId);
+        $ch = curl_init($route);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        $post = curl_exec($ch);
+        curl_close($ch);
+        return $post;
+    }
+
     public static function CreatePost($domainId, PostModel $postModel) {
         $route = RouteManager::CreatePostOnDomainRoute($domainId);
 
@@ -50,11 +60,29 @@ class RequestManager
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postJSON);
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
-        //$post = curl_exec($ch);
+        curl_exec($ch);
 
         //print_r($post);
         curl_close($ch);
         return 1;
+    }
+
+    public static function UpdatePost($domainId, $postId, PostModel $postModel) {
+        $route = RouteManager::UpdatePostOnDomainRoute($domainId, $postId);
+
+        $postData = array (
+            "title" => $postModel->title,
+            "content" => $postModel->content,
+            "author" => $postModel->author,
+            "excerpt" => $postModel->excerpt,
+            "status" => $postModel->status,
+            "postParent" => 0,
+            "url" => $postModel->url,
+            "thumbnailUrl" => $postModel->thumbnailUrl,
+            "postType" => $postModel->postType
+        );
+		
+		//TODO: доделать
     }
 
     public static function DeletePost($domainId, $postId) {

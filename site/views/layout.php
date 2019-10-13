@@ -25,9 +25,42 @@
         //$domains = RequestManager::GetAllDomains();
         //print_r($domains);
 
-        //RequestManager::DeletePost($domainId,17);
+        //RequestManager::DeletePost($domainId,27);
         $posts = RequestManager::GetAllPost($domainId);
-        print_r($posts);
+        $posts = json_decode($posts)->{'result'};
+        //print_r($posts->{'data'});
+
+        foreach($posts->{'data'} as $value) {
+            $post = (array)$value;
+            echo '<div class="post">
+                <div class="post-title">'.$post["title"].'</div>
+                <div>'.$post["content"].'</div>
+                <a href="#updatePostModal?'.$post["id"].'" class="btn btn-primary">Update</a>
+            </div>
+            
+            <form name="update" action="views/updatePost.php" method="post">
+					<a href="#x" class="overlay" id="updatePostModal?'.$post["id"].'"></a>
+					<div class="popup">
+					  <h2>Update post</h2>
+					<a class="close"title="Close" href="#close"></a>
+					
+					
+					<input type="text" name="id" value="'.$post["id"].'" hidden>
+					<label for="title">Title</label>
+					<input type="text" id="title" name="title" placeholder="Title" value="'.$post["title"].'" class="form-control" required autofocus>
+					
+					<label for="content">Content</label>
+					<input type="text" id="content" name="content" placeholder="Content" value="'.$post["content"].'" class="form-control" required autofocus>
+					
+					<label for="author">Author</label>
+					<input type="text" id="author" name="author" placeholder="Author" value="'.$post["author"].'" class="form-control">
+					
+					<label for="excerpt">Excerpt</label>
+					<input type="text" id="excerpt" name="excerpt" placeholder="Excerpt" value="'.$post["excerpt"].'" class="form-control" required autofocus>
+					
+					<button class="btn btn-primary btn-custom" href="views/updatePost.php" name="submit" type="submit">Update</button>
+					</div></form>';
+        }
 
 
         //$post = RequestManager::CreatePost($domainId);

@@ -12,9 +12,19 @@ class RouteManager {
         return self::CreateRoute($route, $domainId);
     }
 
+    public static function GetPostOnDomainRoute($domainId, $postId) {
+        $route = RoutesList::$getPostOnDomainRoute;
+        return self::CreateRoute($route, $domainId, $postId);
+    }
+
     public static function CreatePostOnDomainRoute($domainId) {
         $route = RoutesList::$createPostOnDomainRoute;
         return self::CreateRoute($route, $domainId);
+    }
+
+    public static function UpdatePostOnDomainRoute($domainId, $postId) {
+        $route = RoutesList::$updatePostOnDomainRoute;
+        return self::CreateRoute($route, $domainId, $postId);
     }
 
     public static function DeletePostOnDomainRoute($domainId, $postId) {
