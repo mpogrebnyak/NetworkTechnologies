@@ -22,22 +22,29 @@
         include_once __DIR__.'/../'.'Helpers/SiteHelper.php';
 
         $domainId = SiteHelper::GetDomainId("cm93089_group5");
+
         //$domains = RequestManager::GetAllDomains();
         //print_r($domains);
 
         //RequestManager::DeletePost($domainId,27);
+        //$posts = RequestManager::GetAllPost($domainId);
+        //$posts = json_decode($posts)->{'result'};
+        //print_r($posts->{'data'});
+        ?>
+
+        <div class="wrapper">
+        <?php
         $posts = RequestManager::GetAllPost($domainId);
         $posts = json_decode($posts)->{'result'};
-        //print_r($posts->{'data'});
-
         foreach($posts->{'data'} as $value) {
             $post = (array)$value;
             echo '<div class="post">
+                <a class="delete" title="Delete" href="views/deletePost.php?id='.$post["id"].'"></a>
                 <div class="post-title">'.$post["title"].'</div>
-                <div>'.$post["content"].'</div>
-                <a href="#updatePostModal?'.$post["id"].'" class="btn btn-primary">Update</a>
-            </div>
-            
+                <div class="post-content" style="background-image: url('.$post["thumbnailUrl"].')">'.$post["content"].'</div>
+                <a href="#updatePostModal?'.$post["id"].'" class="btn btn-primary update-btn">Update</a>
+                </div>
+                            
             <form name="update" action="views/updatePost.php" method="post">
 					<a href="#x" class="overlay" id="updatePostModal?'.$post["id"].'"></a>
 					<div class="popup">
@@ -61,11 +68,10 @@
 					<button class="btn btn-primary btn-custom" href="views/updatePost.php" name="submit" type="submit">Update</button>
 					</div></form>';
         }
-
-
         //$post = RequestManager::CreatePost($domainId);
         //print_r($post);
         ?>
+        </div>
 
         <?php
         echo '<form name="insert" action="views/addPost.php" method="post">
