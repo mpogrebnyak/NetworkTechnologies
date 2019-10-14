@@ -25,7 +25,7 @@
     text-align: center;
     border: 2px solid #F97300;
     height: 250px;
-    width: 200px;
+    width: 310px;
     margin-top: 30px;
     margin-right: 60px;
     position: relative;
@@ -41,7 +41,7 @@
     background-size: 100% 100%!important;
     color:#FFFFFF;
     text-align: left;
-    font-size: medium;
+    font-size: large;
 }
 .update-btn {
     background: #F97300 !important;
@@ -59,7 +59,7 @@
     background: #FF7300 !important;
     font-weight: bold;
     color: #FFFFFF;
-    font-size: x-large;
+    font-size: large;
     height: 35px;
     border-radius: 10px 10px 0px 0px;
 }

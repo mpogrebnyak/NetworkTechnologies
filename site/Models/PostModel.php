@@ -31,7 +31,7 @@ class PostModel {
         $this->excerpt = $excerpt;
         $this->postParent = (int)$postParent;
         $this->url = $url;
-        $this->thumbnailUrl = "https://www.nastol.com.ua/pic/201707/2560x1600/nastol.com.ua-238566.jpg";
+        $this->thumbnailUrl = $thumbnailUrl;
 
         $this->status = "publish";
         $this->postType = "Type";

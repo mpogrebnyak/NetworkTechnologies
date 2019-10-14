@@ -8,7 +8,10 @@
                     <a class="nav-button" href="#createPostModal">Add Post</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-button" href="#">Delete Post</a>
+                    <a class="nav-button" href="views/addDemoPost.php">Add Demo Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-button" href="#">Delete All Post</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +43,9 @@
             $post = (array)$value;
             echo '<div class="post">
                 <a class="delete" title="Delete" href="views/deletePost.php?id='.$post["id"].'"></a>
+                <a href="'.$post["url"].'">
                 <div class="post-title">'.$post["title"].'</div>
+                </a>
                 <div class="post-content" style="background-image: url('.$post["thumbnailUrl"].')">'.$post["content"].'</div>
                 <a href="#updatePostModal?'.$post["id"].'" class="btn btn-primary update-btn">Update</a>
                 </div>
@@ -93,10 +98,10 @@
 					<input type="text" id="excerpt" name="excerpt" placeholder="Excerpt" class="form-control" required autofocus>
 										
 					<label for="url" class="sr-only">Url</label>
-					<input disabled="disabled" type="text" id="url" name="url" placeholder="Url" class="form-control disabled" required autofocus>
+					<input type="text" id="url" name="url" placeholder="Url" class="form-control disabled" required autofocus>
 					
 					<label for="thumbnailUrl" class="sr-only">ThumbnailUrl</label>
-					<input disabled="disabled" type="thumbnailUrl" id="thumbnailUrl" name="thumbnailUrl" placeholder="ThumbnailUrl" class="form-control disabled" required autofocus>
+					<input type="thumbnailUrl" id="thumbnailUrl" name="thumbnailUrl" placeholder="ThumbnailUrl" class="form-control disabled" required autofocus>
 					
 					<button class="btn btn-primary btn-custom" href="views/addPost.php" name="submit" type="submit">Add</button>
 					</div></form>';
