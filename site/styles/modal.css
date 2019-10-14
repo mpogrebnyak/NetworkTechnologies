@@ -1,12 +1,19 @@
 .btn-custom {
     margin-top: 5px !important;
-    background: #F97300 !important;
+    background: #f8f9fa !important;
     min-width: 100px !important;
     float: right;
+    color: #F97300;
+    border-radius: 10px;
+    border: 1px solid #F97300;
 }
 
 .form-control {
     margin-top: 2px !important;
+}
+.modal-title {
+    color: #F97300 !important;
+    text-shadow: none !important;
 }
 
 /* Базовые стили слоя затемнения и модального окна  */

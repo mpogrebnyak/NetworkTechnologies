@@ -3,17 +3,20 @@
     height: 60px;
 }
 .navbar-brand{
-    color: #ffffff !important;
+    color: #F97300 !important;
 }
 .nav-button{
     margin-right: 1em !important;
-    color: #ffffff !important;
+    color: #F97300 !important;
+    float: right;
 }
 .navbar-collapse{
     justify-content: flex-end;
 }
-.navbar-collapse{
-    justify-content: flex-end;
+.navbar-toggler{
+    color: #FFFFFF !important;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
 }
 .container {
     display: flex;
@@ -23,7 +26,7 @@
 }
 .post {
     text-align: center;
-    border: 2px solid #F97300;
+    border: 2px solid #f8f9fa;
     height: 250px;
     width: 310px;
     margin-top: 30px;
@@ -39,12 +42,12 @@
     width: 100%;
     border-radius: 0px 0px 10px 10px;
     background-size: 100% 100%!important;
-    color:#FFFFFF;
+    color:#f8f9fa;
     text-align: left;
     font-size: large;
 }
 .update-btn {
-    background: #F97300 !important;
+    background: #f8f9fa !important;
     float: right;
     font-size: 12px;
     position:absolute;
@@ -54,11 +57,12 @@
     margin-right: 2px !important;
     border-radius: 10px;
     border: 1px solid #F97300;
+    color: #F97300;
 }
 .post-title {
-    background: #FF7300 !important;
+    background: #f8f9fa !important;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #F97300;
     font-size: large;
     height: 35px;
     border-radius: 10px 10px 0px 0px;

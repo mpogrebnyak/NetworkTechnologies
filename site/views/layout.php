@@ -1,10 +1,12 @@
 <div id="layout">
-    <nav class="navbar navbar-expand-lg fixed-top ">
-        <a class="navbar-brand">Network Technologies</a>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav mr-4">
-
-                <li class="nav-item">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Network Technologies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
                     <a class="nav-button" href="#createPostModal">Add Post</a>
                 </li>
                 <li class="nav-item">
@@ -53,7 +55,7 @@
             <form name="update" action="views/updatePost.php" method="post">
 					<a href="#x" class="overlay" id="updatePostModal?'.$post["id"].'"></a>
 					<div class="popup">
-					  <h2>Update post</h2>
+					  <h2 class="modal-title">Update post</h2>
 					<a class="close"title="Close" href="#close"></a>
 					
 					
@@ -82,7 +84,7 @@
         echo '<form name="insert" action="views/addPost.php" method="post">
 					<a href="#x" class="overlay" id="createPostModal"></a>
 					<div class="popup">
-					  <h2>Add post</h2>
+					  <h2 class="modal-title">Add post</h2>
 					<a class="close"title="Close" href="#close"></a>
 					
 					<label for="title" class="sr-only">Title</label>
