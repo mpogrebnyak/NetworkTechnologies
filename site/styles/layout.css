@@ -5,6 +5,11 @@
 .navbar-brand{
     color: #F97300 !important;
 }
+.logo {
+    background: url('img/logo.png');
+    height: 50px;
+    width: 50px;
+}
 .nav-button{
     margin-right: 1em !important;
     color: #F97300 !important;
