@@ -64,6 +64,11 @@
     border: 1px solid #F97300;
     color: #F97300;
 }
+.update-btn:hover {
+    background: #FFFACD !important;
+    color: #F97300;
+    border: 1px solid #F97300;
+}
 .post-title {
     background: #f8f9fa !important;
     font-weight: bold;
@@ -71,6 +76,10 @@
     font-size: large;
     height: 35px;
     border-radius: 10px 10px 0px 0px;
+}
+.link:hover {
+    text-decoration:underline;
+    color: #F97300;;
 }
 .body {
     background-image: url('img/background.png');
@@ -95,10 +104,7 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     border-radius: 15px;
-    background-color: rgba(61, 61, 61, 0.8);
-    -webkit-box-shadow: 0px 0px 10px #000;
-    -moz-box-shadow: 0px 0px 10px #000;
-    box-shadow: 0px 0px 10px #000;
+    background-color: rgba(252, 20, 0, 0.8);
     text-align: center;
     text-decoration: none;
     font: 13px/20px 'Tahoma', Arial, sans-serif;
@@ -112,7 +118,6 @@
 .delete:before {
     color: rgba(255, 255, 255, 0.9);
     content: "X";
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
     font-size: 12px;
 }
 .delete:hover {

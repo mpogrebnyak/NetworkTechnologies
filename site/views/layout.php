@@ -47,7 +47,7 @@
             $post = (array)$value;
             echo '<div class="post">
                 <a class="delete" title="Delete" href="views/deletePost.php?id='.$post["id"].'"></a>
-                <a href="'.$post["url"].'">
+                <a class="link" href="'.$post["url"].'">
                 <div class="post-title">'.$post["title"].'</div>
                 </a>
                 <div class="post-content" style="background-image: url('.$post["thumbnailUrl"].')">'.$post["content"].'</div>

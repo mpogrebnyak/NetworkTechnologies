@@ -7,7 +7,11 @@
     border-radius: 10px;
     border: 1px solid #F97300;
 }
-
+.btn-custom:hover {
+    background: #FFFACD !important;
+    color: #F97300;
+    border: 1px solid #F97300;
+}
 .form-control {
     margin-top: 2px !important;
 }
