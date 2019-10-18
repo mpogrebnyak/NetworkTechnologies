@@ -51,11 +51,11 @@
                 <div class="post-title">'.$post["title"].'</div>
                 </a>
                 <div class="post-content" style="background-image: url('.$post["thumbnailUrl"].')">'.$post["content"].'</div>
-                <a href="#updatePostModal?'.$post["id"].'" class="btn btn-primary update-btn">Update</a>
+                <a href="#updatePostModal?id='.$post["id"].'" class="btn btn-primary update-btn">Update</a>
                 </div>
                             
             <form name="update" action="views/updatePost.php" method="post">
-					<a href="#x" class="overlay" id="updatePostModal?'.$post["id"].'"></a>
+					<a href="#x" class="overlay" id="updatePostModal?id='.$post["id"].'"></a>
 					<div class="popup">
 					  <h2 class="modal-title">Update post</h2>
 					<a class="close"title="Close" href="#close"></a>

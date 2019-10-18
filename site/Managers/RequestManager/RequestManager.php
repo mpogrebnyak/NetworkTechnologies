@@ -81,8 +81,18 @@ class RequestManager
             "thumbnailUrl" => $postModel->thumbnailUrl,
             "postType" => $postModel->postType
         );
-		
-		//TODO: доделать
+
+        $postJSON = json_encode($postData);
+
+        $ch = curl_init($route);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PATCH');
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postJSON);
+        curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+        curl_exec($ch);
+
+        curl_close($ch);
+        return 1;
     }
 
     public static function DeletePost($domainId, $postId) {
