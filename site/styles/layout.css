@@ -128,3 +128,10 @@
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+.server-error {
+    color: #F97300 !important;
+    width: 100%;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
