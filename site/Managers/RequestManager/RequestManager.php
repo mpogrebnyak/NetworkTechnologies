@@ -4,6 +4,27 @@ include_once __DIR__.'/../../Models/PostModel.php';
 
 class RequestManager
 {
+    public static function CreateDomain($domainName) {
+        $route = RouteManager::GetAllDomainsRoute();
+
+        $postData = array (
+            "domainName" => $domainName
+        );
+
+        $postJSON = json_encode($postData);
+
+        $ch = curl_init($route);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postJSON);
+        curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+        curl_exec($ch);
+
+        //print_r($post);
+        curl_close($ch);
+        return 1;
+    }
+
     public static function GetAllDomains() {
         $route = RouteManager::GetAllDomainsRoute();
         // инициализация
