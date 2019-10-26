@@ -29,6 +29,14 @@
     margin-top: 60px;
     align-items: center;
 }
+.label {
+    color: #F97300;
+    margin-top: .3rem;
+    margin-bottom: .1rem !important;
+}
+.error-img {
+    border-radius: 10px;
+}
 .post {
     text-align: center;
     border: 2px solid #f8f9fa;

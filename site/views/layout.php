@@ -17,6 +17,9 @@
                 <li class="nav-item">
                     <a class="nav-button" href="#">Delete All Post</a>
                 </li>
+                <li hidden class="nav-item">
+                    <a class="nav-button" href="#createDomain">Create domain</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -32,7 +35,7 @@
         if($domainId == null) {
             echo '<div class="server-error">
                     <div style="margin-bottom: 20px">К сожалению, сервер недоступен. Наши сотрудники уже решают эту проблему.</div>
-                    <img src="styles/img/fixies.png" height="400">
+                    <img class= "error-img" src="styles/img/fixies.png" height="400">
                   </div>';
         }
         else {
@@ -58,16 +61,16 @@
 					
 					
 					<input type="text" name="id" value="'.$post["id"].'" hidden>
-					<label for="title">Title</label>
+					<label for="title" class="label">Title</label>
 					<input type="text" id="title" name="title" placeholder="Title" value="'.$post["title"].'" class="form-control" required autofocus>
 					
-					<label for="content">Content</label>
+					<label for="content" class="label">Content</label>
 					<input type="text" id="content" name="content" placeholder="Content" value="'.$post["content"].'" class="form-control" required autofocus>
 					
-					<label for="author">Author</label>
+					<label for="author" class="label">Author</label>
 					<input type="text" id="author" name="author" placeholder="Author" value="'.$post["author"].'" class="form-control">
 					
-					<label for="excerpt">Excerpt</label>
+					<label for="excerpt" class="label">Excerpt</label>
 					<input type="text" id="excerpt" name="excerpt" placeholder="Excerpt" value="'.$post["excerpt"].'" class="form-control" required autofocus>
 					
 					<button class="btn btn-primary btn-custom" href="views/updatePost.php" name="submit" type="submit">Update</button>
@@ -84,26 +87,40 @@
 					  <h2 class="modal-title">Add post</h2>
 					<a class="close"title="Close" href="#close"></a>
 					
-					<label for="title" class="sr-only">Title</label>
+					<label for="title" class="label">Title</label>
 					<input type="text" id="title" name="title" placeholder="Title" class="form-control" required autofocus>
 					
-					<label for="content" class="sr-only">Content</label>
+					<label for="content" class="label">Content</label>
 					<input type="text" id="content" name="content" placeholder="Content" class="form-control" required autofocus>
 					
-					<label for="author" class="sr-only">Author</label>
+					<label for="author" class="label">Author</label>
 					<input type="text" id="author" name="author" placeholder="Author" class="form-control">
 					
-					<label for="excerpt" class="sr-only">Excerpt</label>
+					<label for="excerpt" class="label">Excerpt</label>
 					<input type="text" id="excerpt" name="excerpt" placeholder="Excerpt" class="form-control" required autofocus>
 										
-					<label for="url" class="sr-only">Url</label>
+					<label for="url" class="label">Url</label>
 					<input type="text" id="url" name="url" placeholder="Url" class="form-control disabled" required autofocus>
 					
-					<label for="thumbnailUrl" class="sr-only">ThumbnailUrl</label>
+					<label for="thumbnailUrl" class="label">ThumbnailUrl</label>
 					<input type="thumbnailUrl" id="thumbnailUrl" name="thumbnailUrl" placeholder="ThumbnailUrl" class="form-control disabled" required autofocus>
 					
 					<button class="btn btn-primary btn-custom" href="views/addPost.php" name="submit" type="submit">Add</button>
 					</div></form>';
         ?>
+        <?php
+        echo '<form name="createDomain" action="views/createDomain.php" method="post">
+					<a href="#x" class="overlay" id="createDomain"></a>
+					<div class="popup">
+					  <h2 class="modal-title">Create domain</h2>
+					<a class="close"title="Close" href="#close"></a>
+					
+					<label for="name" class="label">Name</label>
+					<input required type="text" id="name" name="name" placeholder="Name" class="form-control" required autofocus>
+					
+					<button class="btn btn-primary btn-custom" href="views/createDomain.php" name="submit" type="submit">Create</button>
+					</div></form>';
+        ?>
+
     </div>
 </div>
