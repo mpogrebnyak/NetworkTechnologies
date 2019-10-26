@@ -49,7 +49,10 @@
                 <a class="link" href="'.$post["url"].'">
                 <div class="post-title">'.$post["title"].'</div>
                 </a>
-                <a class="view-link" href="postView.php?id='.$post["id"].'"><div class="post-content" style="background-image: url('.$post["thumbnailUrl"].')">'.$post["content"].'</div></a>
+                <a class="view-link" href="#viewPostModal?id='.$post["id"].'">
+                
+                    <div class="post-content" style="background-image: url('.$post["thumbnailUrl"].')">'.$post["content"].'</div>
+                </a>
                 <a href="#updatePostModal?id='.$post["id"].'" class="btn btn-primary update-btn">Update</a>
                 </div>
                             
@@ -80,7 +83,24 @@
 					<input type="text" id="thumbnailUrl" name="thumbnailUrl" placeholder="ThumbnailUrl" value="'.$post["thumbnailUrl"].'" class="form-control disabled" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<button class="btn btn-primary btn-custom" href="views/updatePost.php" name="submit" type="submit">Update</button>
-					</div></form>';
+					</div></form>
+
+
+            <form name="view" method="post">
+					<a href="#x" class="overlay" id="viewPostModal?id='.$post["id"].'"></a>
+					<div class="popup view">
+					  <h1 class="modal-title">'.$post["title"].'</h1>
+					<a class="close"title="Close" href="#close"></a>
+                    <div class="post-view">
+                            <div class="view-row">
+                                  <div class="view-image"><img src="'.$post["thumbnailUrl"].'" width="100%"></div>
+                                   <div class="view-content">'.$post["content"].'</div>
+                            </div>
+                            <div class="view-author">Author: '.$post["author"].'</div>
+                    </div>
+                    
+                    </div></form>';
+
             }
             echo '</div>';
         }
@@ -127,6 +147,5 @@
 					<button class="btn btn-primary btn-custom" href="views/createDomain.php" name="submit" type="submit">Create</button>
 					</div></form>';
         ?>
-
     </div>
 </div>
