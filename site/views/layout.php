@@ -46,7 +46,7 @@
                 <a class="link" href="'.$post["url"].'">
                 <div class="post-title">'.$post["title"].'</div>
                 </a>
-                <div class="post-content" style="background-image: url('.$post["thumbnailUrl"].')">'.$post["content"].'</div>
+                <a class="view-link" href="postView.php?id='.$post["id"].'"><div class="post-content" style="background-image: url('.$post["thumbnailUrl"].')">'.$post["content"].'</div></a>
                 <a href="#updatePostModal?id='.$post["id"].'" class="btn btn-primary update-btn">Update</a>
                 </div>
                             
