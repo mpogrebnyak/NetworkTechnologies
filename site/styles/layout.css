@@ -37,6 +37,10 @@
 .error-img {
     border-radius: 10px;
 }
+input:focus  {
+    box-shadow: 0 0 10px #F97300 !important;
+    border: 1px solid #F97300 !important;
+}
 .post {
     text-align: center;
     border: 2px solid #f8f9fa;
@@ -73,9 +77,17 @@
     color: #F97300;
 }
 .update-btn:hover {
-    background: #FFFACD !important;
-    color: #F97300;
-    border: 1px solid #F97300;
+     background: #FFFACD !important;
+     color: #F97300;
+     border: 1px solid #F97300;
+ }
+.update-btn:active  {
+    box-shadow: none !important;
+    border: 1px solid #F97300 !important;
+}
+.update-btn:focus  {
+    box-shadow: none !important;
+    border: 1px solid #F97300 !important;
 }
 .post-title {
     background: #f8f9fa !important;

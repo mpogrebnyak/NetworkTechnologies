@@ -62,16 +62,22 @@
 					
 					<input type="text" name="id" value="'.$post["id"].'" hidden>
 					<label for="title" class="label">Title</label>
-					<input type="text" id="title" name="title" placeholder="Title" value="'.$post["title"].'" class="form-control" required autofocus>
+					<input type="text" id="title" name="title" placeholder="Title" value="'.$post["title"].'" class="form-control" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<label for="content" class="label">Content</label>
-					<input type="text" id="content" name="content" placeholder="Content" value="'.$post["content"].'" class="form-control" required autofocus>
+					<input type="text" id="content" name="content" placeholder="Content" value="'.$post["content"].'" class="form-control" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<label for="author" class="label">Author</label>
-					<input type="text" id="author" name="author" placeholder="Author" value="'.$post["author"].'" class="form-control">
+					<input type="text" id="author" name="author" placeholder="Author" value="'.$post["author"].'" class="form-control required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus">
 					
 					<label for="excerpt" class="label">Excerpt</label>
-					<input type="text" id="excerpt" name="excerpt" placeholder="Excerpt" value="'.$post["excerpt"].'" class="form-control" required autofocus>
+					<input type="text" id="excerpt" name="excerpt" placeholder="Excerpt" value="'.$post["excerpt"].'" class="form-control" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
+					
+					<label for="url" class="label">Url</label>
+					<input type="text" id="url" name="url" placeholder="Url" value="'.$post["url"].'" class="form-control disabled" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
+					
+					<label for="thumbnailUrl" class="label">ThumbnailUrl</label>
+					<input type="text" id="thumbnailUrl" name="thumbnailUrl" placeholder="ThumbnailUrl" value="'.$post["thumbnailUrl"].'" class="form-control disabled" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<button class="btn btn-primary btn-custom" href="views/updatePost.php" name="submit" type="submit">Update</button>
 					</div></form>';
@@ -88,22 +94,22 @@
 					<a class="close"title="Close" href="#close"></a>
 					
 					<label for="title" class="label">Title</label>
-					<input type="text" id="title" name="title" placeholder="Title" class="form-control" required autofocus>
+					<input type="text" id="title" name="title" placeholder="Title" class="form-control" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<label for="content" class="label">Content</label>
-					<input type="text" id="content" name="content" placeholder="Content" class="form-control" required autofocus>
+					<input type="text" id="content" name="content" placeholder="Content" class="form-control" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<label for="author" class="label">Author</label>
-					<input type="text" id="author" name="author" placeholder="Author" class="form-control">
+					<input type="text" id="author" name="author" placeholder="Author" class="form-control" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<label for="excerpt" class="label">Excerpt</label>
-					<input type="text" id="excerpt" name="excerpt" placeholder="Excerpt" class="form-control" required autofocus>
+					<input type="text" id="excerpt" name="excerpt" placeholder="Excerpt" class="form-control" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 										
 					<label for="url" class="label">Url</label>
-					<input type="text" id="url" name="url" placeholder="Url" class="form-control disabled" required autofocus>
+					<input type="text" id="url" name="url" placeholder="Url" class="form-control disabled" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<label for="thumbnailUrl" class="label">ThumbnailUrl</label>
-					<input type="thumbnailUrl" id="thumbnailUrl" name="thumbnailUrl" placeholder="ThumbnailUrl" class="form-control disabled" required autofocus>
+					<input type="text" id="thumbnailUrl" name="thumbnailUrl" placeholder="ThumbnailUrl" class="form-control disabled" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<button class="btn btn-primary btn-custom" href="views/addPost.php" name="submit" type="submit">Add</button>
 					</div></form>';
@@ -116,7 +122,7 @@
 					<a class="close"title="Close" href="#close"></a>
 					
 					<label for="name" class="label">Name</label>
-					<input required type="text" id="name" name="name" placeholder="Name" class="form-control" required autofocus>
+					<input type="text" id="name" name="name" placeholder="Name" class="form-control" required oninvalid="this.setCustomValidity(\'Fixies cannot set empty fields. Please fill the field.!\')" oninput="setCustomValidity(\'\')" autofocus>
 					
 					<button class="btn btn-primary btn-custom" href="views/createDomain.php" name="submit" type="submit">Create</button>
 					</div></form>';
