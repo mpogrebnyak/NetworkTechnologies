@@ -15,7 +15,7 @@
                     <a class="nav-button" href="views/addDemoPost.php">Add Demo Post</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-button" href="#">Delete All Post</a>
+                    <a class="nav-button" href="views/deleteAllPosts.php">Delete All Post</a>
                 </li>
                 <li hidden class="nav-item">
                     <a class="nav-button" href="#createDomain">Create domain</a>
